@@ -1,68 +1,43 @@
 
-```markdown
-# Basic Telegram Storage Bot
+# BASIC TELEGRAM FILE STORAGE BOT
 
-A simple Telegram bot that allows users to store files in a private Telegram channel and retrieve them using a unique identifier.
+This bot receives files of any type (documents, images, audio, video) from users, stores them in a private Telegram channel, and retrieves them upon request. Each stored file is associated with a unique identifier that is used to retrieve the file.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
+- [Support](#support)
+- [Contributing](#contributing)
 
 ## Installation
 
-1. **Clone the repository:**
+### Requirements
+- Python
+- `python-telegram-bot==13.6` library
 
-   ```
-   git clone https://github.com/YOUR_GITHUB_USERNAME/Telegram-Storage-Bot.git
-   cd Telegram-Storage-Bot
-   ```
+Install the necessary library using:
 
-   Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username.
-
-2. **Install the necessary libraries:**
-
-   Using pip, install the necessary libraries:
-
-   ```bash
-   pip install python-telegram-bot
-   ```
-
-3. **Setting up the bot:**
-
-   - Create a new bot using BotFather on Telegram.
-   - Grab the TOKEN provided by BotFather.
-   - Create a new Telegram channel.
-   - Add the created bot to the channel and make it an admin.
-   - Note down the `CHANNEL_ID`. Usually, it is a negative number starting with `-100` followed by 10 digits.
-
-4. **Configure the bot:**
-
-   Open the Python script for the bot and:
-
-   - Replace `YOUR_BOT_TOKEN` with the TOKEN you got from BotFather.
-   - Replace `CHANNEL_ID` with the channel ID from the previous step.
+```bash
+pip install python-telegram-bot==13.6
+```
 
 ## Usage
 
-1. **Start the bot:**
+After installing the necessary package, set up your bot token and channel ID, then you can run the bot:
 
-   ```bash
-   python your_bot_script_name.py
-   ```
-
-   Replace `your_bot_script_name.py` with the actual name of your bot script.
-
-2. **Using the bot:**
-
-   - Send any file to the bot.
-   - The bot will store the file in the specified channel and provide you with a unique identifier (FILE_ID).
-   - To retrieve the file, send the FILE_ID to the bot.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+```bash
+python main.py
 ```
 
-You can modify this README.md to better fit your project. Make sure to replace placeholders like `YOUR_GITHUB_USERNAME` and `your_bot_script_name.py` with the actual values pertinent to your project.
+Once the bot is running:
+1. Send it a file of any type. The bot will store the file and provide you with a unique identifier for that file.
+2. To retrieve a file, simply send the unique identifier to the bot.
+
+## Support
+
+If you find any issues or have suggestions for improvements, please file an issue in the GitHub issue tracker.
+
+## Author
+
+$Kek - MrStarXCODE - 22-07-2023
