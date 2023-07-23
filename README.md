@@ -41,3 +41,7 @@ If you find any issues or have suggestions for improvements, please file an issu
 ## Author
 
 $Kek - MrStarXCODE - 22-07-2023
+## License
+
+This project is for personal use. Please do not distribute or use this code for commercial purposes without consent.
+
